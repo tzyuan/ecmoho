@@ -1,0 +1,114 @@
+.bg1 {
+	background: url(../images/bg.jpg);
+	background-size: 100% 100%;
+}
+
+.ab {
+	transform: scale(.9);
+}
+
+.earth,
+.earth_light {
+	width: 320px;
+	height: 320px;
+	background-image: url(../images/earth2.png);
+	z-index: 3;
+}
+
+.earth_light {
+	top: -8%;
+	z-index: 2;
+	background-image: url(../images/earth_light2.png);
+	transform: scale(1.053);
+	/*1.17*/
+	opacity: .3;
+	animation-name: a_earth_light;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes a_earth_light {
+	0% {
+		opacity: .1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.equator1 {
+	z-index: 1;
+	background-image: url(../images/equator1.png);
+	width: 51px;
+	height: 186.5px;
+	left: -84%;
+	top: -2%;
+	transform: scale(1);
+}
+
+.equator2 {
+	z-index: 4;
+	background-image: url(../images/equator2.png);
+	width: 366.5px;
+	height: 142.5px;
+	left: 2%;
+	transform: scale(1);
+}
+
+.kckr {
+	z-index: 4;
+	background-image: url(../images/kckr.png);
+	width: 249px;
+	height: 51.5px;
+	top: 18px;
+	bottom: auto;
+}
+
+.text1 {
+	z-index: 4;
+	background-image: url(../images/text1.png);
+	width: 191.5px;
+	height: 70.5px;
+	top: 50px;
+	bottom: auto;
+	left: 42px;
+	right: auto;
+}
+
+.text2 {
+	z-index: 4;
+	background-image: url(../images/text2.png);
+	width: 182.5px;
+	height: 70px;
+	top: 85px;
+	bottom: auto;
+	right: 56px;
+	left: auto;
+}
+
+.shancun {
+	z-index: 4;
+	background-image: url(../images/shancun.png);
+	width: 165px;
+	height: 35px;
+	top: auto;
+	bottom: 135px;
+}
+
+.go_btn {
+	z-index: 4;
+	background-image: url(../images/go_btn.png);
+	width: 352px;
+	height: 96.5px;
+	top: auto;
+	bottom: 40px;
+}
+
+
+/*index2*/
+
+.bg2 {
+	background-color: #edeef0;
+}
