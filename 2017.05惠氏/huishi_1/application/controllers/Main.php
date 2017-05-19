@@ -18,4 +18,8 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('index4.html');
 	}
+
+	public function submit(){
+		
+	}
 }

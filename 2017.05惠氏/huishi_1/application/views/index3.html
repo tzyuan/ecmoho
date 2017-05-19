@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	 <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" href="../libs/css/main.css">
@@ -11,34 +11,14 @@
 </head>
 
 <body scoll=no>
-	<div class="main bg3">
-		<div class="min ab">
-			<div class="man ab"></div>
-			<div class="woman ab"></div>
-			<div class="sanjiao1 ab"></div>
-			<div class="sanjiao2 ab"></div>
-			<div class="lv ab"></div>
-			<div class="line ab"></div>
-		</div>
-		<div class="btn ab"></div>
-	</div>
 
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<script src="../libs/jquery.min.js"></script>
 	<script src="../libs/main.js"></script>
 	<script>
 		$(function () {
-			function getQueryStringByName(name) {
-				var result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
-				if (result == null || result.length < 1) {
-					return "";
-				}
-				return result[1];
-			}
-			$('.lv').addClass('lv_' + getQueryStringByName('lv'));
-
-			$('.btn').on('touchend', function () {
-				location.href = 'index4';
-			})
+			
 		})
 
 	</script>

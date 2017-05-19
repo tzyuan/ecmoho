@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	 <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" href="../libs/css/main.css">
@@ -11,59 +11,14 @@
 </head>
 
 <body scoll=no>
-	<div class="main bg2">
-		<div class="top ab"></div>
-		<div class="min ab">
-			<div class="item paoxie"></div>
-			<div class="item suganyi"></div>
-			<div class="item antang"></div>
-			<div class="item yundongerji"></div>
-			<div class="item bibao"></div>
-			<div class="item weishengsu"></div>
-			<div class="item danbaifen"></div>
-			<div class="item app"></div>
-		</div>
-		<div class="btn ab"></div>
-		<div class="sanjiao1 ab"></div>
-		<div class="sanjiao2 ab"></div>
-	</div>
+	
 
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="../libs/jquery.min.js"></script>
 	<script src="../libs/main.js"></script>
 	<script>
 		$(function () {
-			$('.min .item').on('touchend', function () {
-				$(this).toggleClass('active');
-			})
-			$('.btn').on('touchend', function () {
-				var len = $('.min .item.active').length;
-				var lv = 0;
-				if (len <= 3) {
-					lv = 0;
-				} else if (len == 4) {
-					lv = 1;
-					$('.min .item.active').each(function (i, e) {
-						if ($(e).hasClass('antang') ||
-							$(e).hasClass('weishengsu') ||
-							$(e).hasClass('danbaifen')) {
-							lv = 2;
-						}
-					});
-				} else if (len == 5) {
-					lv = 1;
-					$('.min .item.active').each(function (i, e) {
-						if ($(e).hasClass('antang') ||
-							$(e).hasClass('weishengsu') ||
-							$(e).hasClass('danbaifen')) {
-							lv = 3;
-						}
-					});
-				} else if (len > 5) {
-					lv = 4;
-				}
-
-				location.href = 'index3?lv=' + lv;
-			})
+			
 		})
 
 	</script>
